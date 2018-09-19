@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kanban Board</title>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <body>
+    <div id="main">
+      <div id="form">
+          <input type="text" id="command" />
+          <button type="submit" id="submit">Submit</button>
+      </div>
+      
+      <!-- <p id="content"></p> -->
+      <div id="remove" ondrop="drop(event)" ondragover="allowDrop(event)">REMOVE</div>
+      <div id="board">
+        <div class="subboard" id="todoBoard">
+          <div class="label">TODO</div>
+          <div class="add" id="add-todo" ondrop="drop(event)" ondragover="allowDrop(event)">DROP TO TODO</div>
+          <div class="col" id="todo"></div>
+        </div>
+        <div class="subboard" id="doingBoard">
+          <div class="label">DOING</div>
+          <div class="add" id="add-doing" ondrop="drop(event)" ondragover="allowDrop(event)">DROP TO DOING</div>
+          <div class="col" id="doing"></div>
+        </div>
+        <div class="subboard" id="doneBoard">
+          <div class="label">DONE</div>
+          <div class="add" id="add-done" ondrop="drop(event)" ondragover="allowDrop(event)">DROP TO DONE</div>
+          <div class="col" id="done"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
