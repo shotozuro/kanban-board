@@ -26,7 +26,7 @@
   width: 85%;
   margin: 5px;
   padding: 10px;
-  color: #ffffff;
+  color: #54a0ff;
   border: #54a0ff dashed 2px;
 }
 .col {
@@ -43,18 +43,28 @@
   flex-direction: column;
   align-self: stretch;
   align-items: center;
+  background: #fdfdfd;
+  border: solid 1px #dca3a3;
 }
 .label {
-  display: flex;
-  margin-top: 10px;
-  height: 100%;
-  height: 50px;
-  justify-content: center;
-  align-items: center
+  text-align: center;
+  width: 90%;
+  margin: 5px;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 3px;
+  /* border: #54a0ff solid 2px; */
 }
-#todoBoard {
-  background: #c8d6e5;
+.label-todo {
+  background: #22a6b3;
 }
+.label-doing {
+  background: #f6e58d;
+}
+.label-done {
+  background: #6ab04c;
+}
+
 .task {
   display: flex;
   align-items: flex-start;
@@ -62,12 +72,6 @@
   width: 100%;
 }
 
-#doingBoard {
-  background: #f6e58d;
-}
-#doneBoard {
-  background: #00d2d3;
-}
 #remove {
   display: flex;
   align-self: center;

@@ -21,7 +21,7 @@ function inputCommand () {
     const id = commands[1]
     const target = commands[2]
     const targets = ["todo", "doing", "done"]
-    if (targets.indexOf(target) > 0) {
+    if (targets.indexOf(target) > -1) {
       moveTask(id, target)
     } else { alert(`Sorry, only ${targets.join(", ")} are allowed`) }
     
